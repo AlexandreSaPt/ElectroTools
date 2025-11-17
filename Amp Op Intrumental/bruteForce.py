@@ -1,5 +1,3 @@
-#import pulp
-
 #parametros
 I = 0.0005 # A
 R_min = 100 # Ohms
@@ -14,14 +12,6 @@ Vdrop_max = I * R_max #V
 
 Vin_min = 5 - Vdrop_max #V
 Vin_max = 5 - Vdrop_min #V
-
-
-#Variaveis de Decisão
-#r0 - r
-#r1 - r1
-#r2 - r2
-#r3 - rf
-N_RESISTENCIAS = 4
 
 
 bestScore = 0
