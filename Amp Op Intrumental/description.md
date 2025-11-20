@@ -6,4 +6,6 @@ As variaveis I, R_min, R_max e VCC servem para calcular o Vdrop maximo e minimo 
 Se o valor de output maximo procurado nao for 3.3V a variavel Amp_max deve ser alterada para o valor pretendido.
 
 
+Se formos comprar um aplificador operacial diretamente em vez fazer o nosso so podemos adicionar uma resistencia, como é o caso do AD620, dado que assim terá mais precisao. Para esse casos, criou-se o codigo amp-op instrumental resistencia.py que tem um funcionamento semelhante ao codigo anterior mas é preciso alterar a formula do ganho dado que esta varia para diferentes amplificadores instrumentais.
+
 ![Amplificador instrumental](https://github.com/user-attachments/assets/522e8271-f3cc-4314-bcf7-a783573a0fe6)
