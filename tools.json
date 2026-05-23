@@ -1,0 +1,23 @@
+[
+  {
+    "title": "CSV Visualizer",
+    "description": "Tool to visualize CSV files",
+    "script_path": "csv_visualizer\\csv_visualizer.py",
+    "image_path": "",
+    "id": "6b43bc7e-4167-4089-959b-70ad50d37c2e"
+  },
+  {
+    "title": "Serial Logger",
+    "description": "Serial logger tool for Arduino",
+    "script_path": "serial_logger\\serial_logger.py",
+    "image_path": "",
+    "id": "eaa325d4-d1e2-4ba5-b942-bf968456e624"
+  },
+  {
+    "title": "Filtros Passivos BruteForce",
+    "description": "Filtros Passivos BruteForce na série E12",
+    "script_path": "Others\\Filtros Passivos BruteForce.py",
+    "image_path": "",
+    "id": "6f680185-2559-4d87-aa1f-fcc7f28a67bd"
+  }
+]
