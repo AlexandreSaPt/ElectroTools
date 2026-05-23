@@ -15,16 +15,22 @@ pip install Pillow
 
 ## Running
 
-You can start the launcher either with the batch file or directly with the Python GUI script:
+**Double-click** `launcher.pyw` in File Explorer — no terminal window will appear.
+ 
+Alternatively, from a terminal:
+```
+pythonw launcher.pyw   # Windows  – no console
+python  launcher.pyw   # macOS / Linux
+```
+ 
+> **Why `.pyw`?**  
+> Windows maps `.pyw` files to `pythonw.exe`, a silent interpreter with no attached console.  
+> Scripts you *launch* from the app that need a terminal still get one — the launcher uses  
+> `CREATE_NEW_CONSOLE` so each CLI tool pops up its own window as normal.
 
+You can also start the launcher with the batch file:
 ```
 run.bat
-```
-
-or
-
-```
-python launcher.pyw
 ```
 
 ## Adding a tool
@@ -45,7 +51,7 @@ All paths in `tools.json` are **relative to** the folder where `launcher.py` liv
 Keep your scripts in the same folder or any sub-folder:
 
 ```
-launcher.py          ← run this
+launcher.pyw         ← run this
 tools.json           ← auto-created, stores all tool info
 my_scripts/
   script_1/
