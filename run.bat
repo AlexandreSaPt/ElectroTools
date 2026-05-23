@@ -1,2 +1,2 @@
 @echo off
-python "launcher.py"
+start pythonw "%~dp0launcher.pyw"

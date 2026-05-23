@@ -314,8 +314,11 @@ class ToolLauncherApp:
         script_dir = path.parent
         try:
             if sys.platform == "win32":
+                # sys.executable may be pythonw.exe (no console) — swap it for
+                # python.exe so child scripts get their own terminal window.
+                python_exe = sys.executable.replace("pythonw.exe", "python.exe")
                 subprocess.Popen(
-                    [sys.executable, str(path)],
+                    [python_exe, str(path)],
                     cwd=script_dir,
                     creationflags=subprocess.CREATE_NEW_CONSOLE,
                 )
