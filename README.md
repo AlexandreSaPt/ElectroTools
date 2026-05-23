@@ -1,4 +1,5 @@
 # 🛠 Tool Launcher
+SHOULD CALL A SUB PROCESS WITH "CREATE NEW CONSOLE"
 
 A clean, click-to-run GUI for all your Python scripts.
 
@@ -14,8 +15,16 @@ pip install Pillow
 
 ## Running
 
+You can start the launcher either with the batch file or directly with the Python GUI script:
+
 ```
-python launcher.py
+run.bat
+```
+
+or
+
+```
+python launcher.pyw
 ```
 
 ## Adding a tool
