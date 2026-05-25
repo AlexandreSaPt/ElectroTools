@@ -19,5 +19,19 @@
     "script_path": "Others\\Filtros Passivos BruteForce.py",
     "image_path": "",
     "id": "6f680185-2559-4d87-aa1f-fcc7f28a67bd"
+  },
+  {
+    "title": "Divisor de Tensão",
+    "description": "",
+    "script_path": "Others\\Divisor de tensao Brute Force.py",
+    "image_path": "",
+    "id": "a4fa530d-c17d-46fe-b22b-c14ace5474af"
+  },
+  {
+    "title": "Filtro Passivos",
+    "description": "",
+    "script_path": "Others\\Filtros Passivos BruteForce.py",
+    "image_path": "",
+    "id": "af60d537-04bc-451e-9aab-a36da9f2a795"
   }
 ]
