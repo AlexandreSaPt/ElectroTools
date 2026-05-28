@@ -11,8 +11,8 @@ def solve_voltage_divider():
     ]
 
     try:
-        vcc = float(input("Vcc (Alimentação): "))
-        vout_target = float(input("Vout (Pretendido): "))
+        vcc = float(input("Vcc (Alimentação): ").replace(',', '.'))
+        vout_target = float(input("Vout (Pretendido): ").replace(',', '.'))
     except ValueError:
         print("Erro: Insira valores numéricos.")
         return
@@ -30,7 +30,7 @@ def solve_voltage_divider():
                 vout_calc = ratio * vcc
                 diff = vout_calc - vout_target
                 abs_error = abs(diff)
-                rel_error = (abs_error / vout_target) * 100
+                rel_error = (abs_error / vout_target) * 100 if vout_target != 0 else 0.0
                 
                 results.append({
                     'r1': r1,
@@ -58,3 +58,7 @@ def solve_voltage_divider():
 
 if __name__ == "__main__":
     solve_voltage_divider()
+    
+    # Paragem para manter a janela aberta e instrução de saída
+    print("\n" + "="*75)
+    input("Cálculo concluído. Clique no [X] da janela para fechar o programa.")
