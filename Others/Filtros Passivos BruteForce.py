@@ -16,10 +16,7 @@ C_LIST = [
     100e-12, 150e-12, 220e-12, 330e-12, 470e-12, 680e-12,
     1.0e-9, 1.5e-9, 2.2e-9, 3.3e-9, 4.7e-9, 6.8e-9,
     10e-9, 15e-9, 22e-9, 33e-9, 47e-9, 68e-9,
-    100e-9, 150e-9, 220e-9, 330e-9, 470e-9, 680e-9,
-    1.0e-6, 1.5e-6, 2.2e-6, 3.3e-6, 4.7e-6, 6.8e-6,
-    10e-6, 15e-6, 22e-6, 33e-6, 47e-6, 68e-6,
-    100e-6, 150e-6
+    100e-9, 150e-9, 220e-9, 330e-9, 470e-9, 680e-9
 ]
 
 def formatar_r(v):
@@ -35,12 +32,7 @@ def formatar_c(v):
 
 def calcular_filtro():
     print("-" * 40)
-    modo = input("Tipo de Filtro: Passa-Baixo [b] ou Passa-Alto [a]? ").lower()
     
-    if modo not in ['b', 'a']:
-        print("Erro: Escolha 'b' ou 'a'.")
-        return
-
     try:
         f_alvo = abs(float(input("Introduza a frequência de corte alvo (Hz): ").replace(',', '.')))
         if f_alvo == 0:
@@ -70,8 +62,7 @@ def calcular_filtro():
     # Ordenar por erro absoluto (mais próximo do alvo primeiro)
     ordenados = sorted(resultados_unicos.values(), key=lambda x: x[0])
 
-    tipo_s = "Passa-Baixo" if modo == 'b' else "Passa-Alto"
-    print(f"\n--- Top 5 para Filtro {tipo_s} (Alvo: {f_alvo} Hz) ---")
+    print(f"\n--- Top 5 Combinações RC (Alvo: {f_alvo} Hz) ---")
     print(f"{'Pos.':<4} | {'R':<8} | {'C':<8} | {'F. Corte':<12} | {'Erro Rel.':<10}")
     print("-" * 60)
 
@@ -82,3 +73,7 @@ def calcular_filtro():
 
 if __name__ == "__main__":
     calcular_filtro()
+    
+    # Paragem para manter a janela aberta e instrução de saída
+    print("\n" + "="*50)
+    input("Cálculo concluído. Clique no [X] da janela para fechar o programa.")
