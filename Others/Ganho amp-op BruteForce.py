@@ -1,3 +1,5 @@
+import math
+
 # VETOR E12 COMPLETO (10R A 10M)
 R_LIST = [
     10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82,
@@ -62,3 +64,7 @@ def calcular():
 
 if __name__ == "__main__":
     calcular()
+    
+    # Paragem para manter a janela aberta e instrução de saída
+    print("\n" + "="*55)
+    input("Cálculo concluído. Clique no [X] da janela para fechar o programa.")
