@@ -17,14 +17,14 @@
     "title": "Filtros Passivos BruteForce",
     "description": "Filtros Passivos BruteForce na série E12",
     "script_path": "Others\\Filtros Passivos BruteForce.py",
-    "image_path": "",
+    "image_path": "Others\\filter_brute.png",
     "id": "6f680185-2559-4d87-aa1f-fcc7f28a67bd"
   },
   {
     "title": "Divisor de Tensão",
     "description": "",
     "script_path": "Others\\Divisor de tensao Brute Force.py",
-    "image_path": "",
+    "image_path": "Others\\divisor_brute.png",
     "id": "a4fa530d-c17d-46fe-b22b-c14ace5474af"
   },
   {
