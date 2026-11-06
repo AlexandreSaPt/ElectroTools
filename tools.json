@@ -33,5 +33,12 @@
     "script_path": "Others\\Filtros Passivos BruteForce.py",
     "image_path": "",
     "id": "af60d537-04bc-451e-9aab-a36da9f2a795"
+  },
+  {
+    "title": "Voltage Divider + Filter",
+    "description": "",
+    "script_path": "voltage_divider_filter\\voltage_divider_filter.py",
+    "image_path": "voltage_divider_filter\\Captura de ecrã 2026-11-06 112840.png",
+    "id": "7d2ea185-0036-49d4-8a2b-4ace77009652"
   }
 ]
